@@ -69,7 +69,7 @@
 }
 
 .main-nav--fixed {
-    background-color: #aaaaaa;
+    background-color: #c7c7c7;
     box-shadow: 0 0 15px 5px rgba(50,50,50,0.3);
     padding-bottom: 5px;
 }
@@ -228,11 +228,16 @@
 }
 
 .section-contact{
-    background-color: #aaaaaa;
+    background-color: #c7c7c7;
     color: black;
     padding: 5px 2vw;
     display: flex;
     justify-content: space-between;
+}
+
+.email-link {
+    text-decoration: none;
+    color: #C10A0A;
 }
 
 .section-contact__social-media{
@@ -273,14 +278,14 @@
         padding: 0;
         overflow: hidden;
         transition: max-height 0.3s ease;
-        max-height: 150px;
+        max-height: 180px;
     }
     .main-nav__navigation--collapsed {
         max-height: 0 !important;
     }
 
     .main-nav--top {
-        background-color: #aaaaaa;
+        background-color: #c7c7c7;
     }
 
     .main-menu__element {
