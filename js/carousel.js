@@ -25,14 +25,14 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-// let stopIv = setInterval( () => plusSlides(1), 3000)
-// document.querySelector('.header__carousel').addEventListener("mouseover", function () {
-//     clearInterval(stopIv)
-// })
+let stopIv = setInterval( () => plusSlides(1), 3000)
+document.querySelector('.header__carousel').addEventListener("mouseover", function () {
+    clearInterval(stopIv)
+})
 
-// document.querySelector('.header__carousel').addEventListener("mouseout", function () {
-//     stopIv = setInterval(() => plusSlides(1), 3000)
-// })
+document.querySelector('.header__carousel').addEventListener("mouseout", function () {
+    stopIv = setInterval(() => plusSlides(1), 3000)
+})
 
 document.querySelector('.next').addEventListener('click', () => plusSlides(1))
 document.querySelector('.prev').addEventListener('click', () => plusSlides(-1))
